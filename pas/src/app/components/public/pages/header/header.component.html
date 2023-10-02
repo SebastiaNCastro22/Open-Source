@@ -1,0 +1,15 @@
+<mat-toolbar color="primary" fxLayout="row" fxLayout.lt-md="column">
+  <a class="title" mat-button [routerLink]="'/home'">
+    <mat-icon alt="Technology Indoor Marathon Logo">accessibility</mat-icon>
+    Technogym Indoor Marathon
+  </a>
+  <span class="example-spacer"></span>
+  <div class="sections" fxLayout="row" fxLayoutAlign="end center">
+    <a mat-button [routerLink]="'/home'">
+      Home
+    </a>
+    <a mat-button [routerLink]="'/marathon/records'">
+      Records
+    </a>
+  </div>
+</mat-toolbar>

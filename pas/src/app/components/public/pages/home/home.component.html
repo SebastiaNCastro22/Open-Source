@@ -1,0 +1,51 @@
+<div class="card" *ngIf="marathonWinner">
+  <mat-card>
+    <mat-card-content>
+      <div class="card-content-container">
+        <img class="card-image" src="{{ marathonWinner.photoUrl }}" alt="Marathon Winner Photo" aria-label="Marathon Winner Photo">
+        <div class="card-details">
+          <h1 mat-card-title>Marathon Winner</h1>
+          <ul>
+            <li>
+              Name: {{ marathonWinner.firstName }}
+            </li>
+            <li>
+              Surname: {{ marathonWinner.lastName }}
+            </li>
+            <li>
+              Record Time: {{ marathonWinner.recordTime }}
+            </li>
+            <li>
+              Marathon Center Name: {{ getCenterName(marathonWinner.centerId) }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-content>
+      <div class="card-content-container">
+        <img class="card-image" src="{{ marathonWinner.photoUrl }}" alt="Marathon Winner Photo" aria-label="Marathon Winner Photo">
+        <div class="card-details">
+          <h1 mat-card-title>Marathon Winner</h1>
+          <ul>
+            <li>
+              Name: {{ marathonWinner.firstName }}
+            </li>
+            <li>
+              Surname: {{ marathonWinner.lastName }}
+            </li>
+            <li>
+              Record Time: {{ marathonWinner.recordTime }}
+            </li>
+            <li>
+              Marathon Center Name: {{ getCenterName(marathonWinner.centerId) }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
